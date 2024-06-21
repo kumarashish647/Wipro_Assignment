@@ -1,0 +1,81 @@
+1) Write some network terminology?
+Ans:-
+
+1. IP Address: A unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.
+
+2. Router: A networking device that forwards data packets between computer networks. It acts as a gateway to connect different networks.
+
+3. Switch: A network device that connects devices within a single local area network (LAN). It operates at the data link layer (Layer 2) of the OSI model.
+
+4. Gateway: A node on a network that serves as an entrance to another network. It often connects networks with different protocols.
+
+5. Firewall: A security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks.
+
+6. DNS (Domain Name System): A system that translates domain names (e.g., www.example.com) to IP addresses, allowing users to access websites using easy-to-remember domain names.
+
+7. LAN (Local Area Network): A network that connects computers and devices in a limited geographical area, such as a home, office, or campus.
+
+8. WAN (Wide Area Network): A network that covers a broad area using leased telecommunication lines or satellite links. It connects LANs across long distances.
+
+9. MAC Address (Media Access Control Address): A unique identifier assigned to network interfaces for communications on a physical network segment.
+
+10. VPN (Virtual Private Network): A secure encrypted connection established over a public network (such as the internet), allowing users to access private networks remotely.
+
+11. Subnet Mask: A 32-bit number used with an IP address to define the network portion and the host portion of the address. It helps in identifying which part of an IP address is the network ID and which part is the host ID.
+
+12. Packet: A unit of data transmitted over a network. It consists of a header and payload, including destination and source addresses.
+
+13. Bandwidth: The maximum data transfer rate of a network or internet connection, measured in bits per second (bps), kilobits per second (kbps), or megabits per second (Mbps).
+
+14. Protocol: A set of rules governing the format and transmission of data over a network. Examples include TCP/IP (Transmission Control Protocol/Internet Protocol) and HTTP (Hypertext Transfer Protocol).
+
+15. Ethernet: A standard for wired local area network (LAN) technology. It defines wiring and signaling standards for the physical layer (Layer 1) and data link layer (Layer 2) of the OSI model.
+
+Understanding these terms is crucial for effectively managing and troubleshooting computer networks.
+
+2) Draw your home network Topology and explain how you are accessing the RPS Lab environment?
+Ans:- 
+
+ Diagram of my home network topology:-
+
+
+                                      [ ISP ]
+                                        |
+                                        |
+                                   [ Modem/Router ]
+                                        |
+                                        |
+                                   [ Switch/Hub ]
+                           /         /       |         \
+              [ Computer]    [ Laptop]   [ Smart TV]    [ RPS Lab Server]
+
+
+ Explanation of Components:-
+
+1. ISP (Internet Service Provider): Provides internet connectivity to my home network through a modem/router.
+
+2. Modem/Router: Receives the internet connection from the ISP and provides wired and wireless connectivity to devices in my home network.
+
+3. Switch/Hub: Distributes wired connections among devices that require Ethernet connectivity.
+
+4. Devices:
+   - Computer: Typically used for general work and browsing.
+   - Laptop: Used for portable work and entertainment.
+   - Smart TV: Connected for streaming services and media consumption.
+   - RPS Lab Server: This is where I access the RPS (Remote Programming Service) Lab environment.
+
+ Accessing the RPS Lab Environment:-
+
+To access the RPS Lab environment from my home network:
+
+1. Remote Access Software: I use remote access software like Remote Desktop Protocol (RDP) or Virtual Private Network (VPN) to connect securely to the RPS Lab Server.
+
+2. Authentication: Upon connecting, I authenticate myself using credentials provided by the RPS Lab administrator.
+
+3. Remote Work Environment: Once connected, I can work on programming tasks, access specialized software, or perform experiments as required by the RPS Lab environment.
+
+4. Data Transfer: Data transfer between my local devices and the RPS Lab Server occurs securely over the internet connection provided by my ISP.
+
+5. Security Measures: To ensure data security, I adhere to the security protocols and guidelines set by the RPS Lab, including using encrypted connections and complying with access control policies.
+
+This setup allows me to efficiently utilize the resources and capabilities of the RPS Lab environment while maintaining the convenience of working from home on my local devices.

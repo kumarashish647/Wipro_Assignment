@@ -1,0 +1,394 @@
+1) Difference between scrum vs Kanban?
+Ans:-
+
+ -Scrum vs. Kanban: Key Differences
+
+  1. Workflow Management :-
+
+-   Scrum  :-
+
+  - Time-boxed Sprints**: Work is divided into fixed-length iterations called sprints, usually 2-4 weeks long.
+  - Defined Scope**: The scope of work is fixed for each sprint.
+
+-   Kanban :-
+
+  - Continuous Flow : Work items are pulled through the process as capacity permits, without fixed timeframes.
+  - Flexible Scope  : Work items can be added or removed as needed.
+
+2. Roles and Responsibilities :-
+-  Scrum :-
+
+  - Specific Roles : Defined roles such as Scrum Master, Product Owner, and Development Team.
+
+- Kanban :-
+
+  - No Prescribed Roles**: Roles are flexible and typically align with existing team structures.
+
+3. Process and Ceremonies :-
+
+-   Scrum :-
+
+  - Regular Ceremonies : Includes Sprint Planning, Daily Standups, Sprint Reviews, and Sprint Retrospectives.
+  - Sprint Planning : At the start of each sprint to define goals and tasks.
+  - Sprint Retrospective : At the end of each sprint to reflect on improvements.
+
+-   Kanban :-
+
+  - Minimal Ceremonies : Focuses on continuous workflow without mandatory ceremonies.
+  - Continuous Improvement : Adjustments are made continuously rather than at the end of a sprint.
+
+4. Visual Management :-
+
+-   Scrum  :-
+
+  - Sprint Backlog : A list of tasks for the current sprint.
+  - Burndown Charts  : Track the progress of work within a sprint.
+
+-   Kanban  :-
+
+  - Kanban Board : Visualizes the entire workflow with columns representing different stages (e.g., To Do, In Progress, Done).
+  - Work In Progress (WIP) Limits : Limits the number of tasks in each stage to manage flow and prevent bottlenecks.
+
+5. Flexibility and Adaptability:-
+
+- Scrum :-
+
+  - Less Flexible : Scope changes are discouraged during a sprint.
+  - Structured  : Follows a set structure with defined roles and ceremonies.
+
+- Kanban  :-
+
+  - Highly Flexible : Changes can be made at any time.
+  - Adaptive**: More adaptable to changing priorities and work requirements.
+
+6. Focus  :-
+
+- Scrum  :-
+
+  -Predictable Delivery  : Focuses on delivering a potentially shippable product increment at the end of each sprint.
+
+- Kanban  :-
+
+  - Efficiency and Flow**: Focuses on optimizing the flow of work and improving process efficiency.
+
+ Summary  :-
+
+- Scrum is suitable for projects that benefit from a structured approach with regular, predictable delivery cycles and clear roles.
+- Kanban is ideal for teams seeking flexibility, continuous delivery, and a visual approach to managing work with minimal predefined roles and ceremonies.
+
+2) Write 3 user stories with acceptance creteria?
+Ans:-
+
+  - User Story 1: As a User, I want to reset my password
+
+ User Story : 
+
+ As a user, I want to reset my password so that I can regain access to my account if I forget my current password.
+
+ Acceptance Criteria :
+
+1. Given I am on the login page, when I click on the "Forgot Password" link, then I should be redirected to the password reset page.
+2. Given I am on the password reset page, when I enter my registered email address and click "Submit," then I should receive a password reset email.
+3. Given I receive the password reset email, when I click on the reset link in the email, then I should be redirected to a page where I can enter a new password.
+4. Given I am on the password reset page, when I enter a new password and confirm it, then my password should be updated, and I should be able to log in with the new password.
+
+ User Story 2: As a User, I want to filter products by category
+
+ User Story :-
+ 
+ As a user, I want to filter products by category so that I can easily find the type of products I am looking for.
+
+  Acceptance Criteria  :-
+
+1. Given I am on the products page, when I select a category from the filter options, then only the products that belong to that category should be displayed.
+2. Given I have applied a category filter, when I clear the filter, then all products should be displayed again.
+3. Given I have selected multiple categories, when I apply the filters, then the products belonging to any of the selected categories should be displayed.
+4. Given there are no products in the selected category, when I apply the filter, then a message stating "No products found in this category" should be displayed.
+
+ - User Story 3: As an Admin, I want to generate a monthly sales report
+
+  User Story  :- 
+
+  As an admin, I want to generate a monthly sales report so that I can analyze the sales performance of the past month.
+
+  Acceptance Criteria  :-
+
+1. Given I am on the admin dashboard, when I navigate to the "Reports" section and select "Monthly Sales Report," then I should be prompted to select a month.
+2. Given I have selected a month and clicked "Generate Report," when the report is generated, then it should display total sales, number of orders, and revenue for the selected month.
+3. Given the report is generated, when I click "Download Report," then a CSV file containing the sales data for the selected month should be downloaded to my device.
+4. Given the report is generated, when I click "View Details," then I should see a breakdown of sales by product, including quantities sold and revenue generated for each product.
+
+3) Write product backlog and backlog for your project?
+Ans:-
+
+    - Backlog for an Online Hotel Booking App project.
+
+ Product Backlog:
+
+1. User Authentication and Account Management
+   - User registration
+   - User login/logout
+   - User profile management (update profile, change password, etc.)
+   
+2. Search and Filtering
+   - Search functionality for hotels based on location, date, price range, amenities, etc.
+   - Filter options for refining search results
+   
+3. Hotel Listings
+   - Display a list of hotels based on search criteria
+   - Include hotel details (description, images, amenities, ratings, reviews)
+   
+4. Booking
+   - Allow users to select a hotel and book rooms for specific dates
+   - Display booking confirmation
+   
+5. Payment Integration
+   - Integrate payment gateway for secure transactions
+   - Support multiple payment methods (credit/debit cards, PayPal, etc.)
+   
+6. User Reviews and Ratings
+   - Allow users to rate hotels and leave reviews
+   - Display average rating for each hotel
+   
+7. Admin Dashboard
+   - Admin login/logout
+   - Manage hotels (add, edit, delete)
+   - View and manage user bookings
+   - Review and moderate user reviews
+   
+8. Notifications
+   - Send booking confirmations and reminders to users via email or push notifications
+   - Notify admins of new bookings and reviews
+   
+9. Localization
+   - Support multiple languages and currencies
+   - Adapt content based on user's location or language preference
+   
+10. Responsive Design
+    - Ensure the app is responsive and works seamlessly on various devices (desktop, tablet, mobile)
+
+- Backlog:
+
+  Sprint 1:
+
+1. User Authentication and Account Management
+   - Implement user registration functionality
+   - Develop user login/logout system
+   - Create user profile page for basic profile management
+
+  Sprint 2:
+
+2. Search and Filtering
+   - Design and implement basic search functionality
+   - Develop filtering options for refining search results
+
+3. Hotel Listings
+   - Fetch and display a list of hotels based on search criteria
+   - Implement basic hotel details view
+
+  Sprint 3 :
+
+4. Booking
+   - Allow users to select a hotel and book rooms for specific dates
+   - Display booking confirmation after successful booking
+
+5. Payment Integration
+   - Integrate payment gateway for secure transactions
+   - Test payment process with dummy data
+
+  Sprint 4:
+
+6. User Reviews and Ratings
+   - Allow users to rate hotels and leave reviews
+   - Display average rating for each hotel on the hotel details page
+
+7. Admin Dashboard
+   - Implement basic admin login/logout functionality
+   - Develop UI for managing hotels (add, edit, delete)
+
+  Sprint 5:
+
+8. Notifications
+   - Implement email notifications for booking confirmations and reminders
+   - Develop notifications for admins on new bookings and reviews
+
+9. Localization
+   - Add support for at least one additional language
+   - Implement currency conversion based on user's location or preference
+
+  Sprint 6:
+
+10. Responsive Design
+    - Ensure the app is responsive and works well on mobile devices
+    - Test responsiveness on various screen sizes and devices
+
+  This is a simplified example, but it should give you an idea of how the product backlog and a sample sprint backlog might look for an Online Hotel Booking App project.
+
+ Product Backlog:
+
+1. User Authentication and Account Management
+   - User registration
+   - User login/logout
+   - User profile management (update profile, change password, etc.)
+   
+2. Search and Filtering
+   - Search functionality for hotels based on location, date, price range, amenities, etc.
+   - Filter options for refining search results
+   
+3. Hotel Listings
+   - Display a list of hotels based on search criteria
+   - Include hotel details (description, images, amenities, ratings, reviews)
+   
+4. Booking
+   - Allow users to select a hotel and book rooms for specific dates
+   - Display booking confirmation
+   
+5. Payment Integration
+   - Integrate payment gateway for secure transactions
+   - Support multiple payment methods (credit/debit cards, PayPal, etc.)
+   
+6. User Reviews and Ratings
+   - Allow users to rate hotels and leave reviews
+   - Display average rating for each hotel
+   
+7. Admin Dashboard
+   - Admin login/logout
+   - Manage hotels (add, edit, delete)
+   - View and manage user bookings
+   - Review and moderate user reviews
+   
+8. Notifications
+   - Send booking confirmations and reminders to users via email or push notifications
+   - Notify admins of new bookings and reviews
+   
+9. Localization
+   - Support multiple languages and currencies
+   - Adapt content based on user's location or language preference
+   
+10. Responsive Design
+    - Ensure the app is responsive and works seamlessly on various devices (desktop, tablet, mobile)
+
+- Backlog:
+
+  Sprint 1:
+
+1. User Authentication and Account Management
+   - Implement user registration functionality
+   - Develop user login/logout system
+   - Create user profile page for basic profile management
+
+  Sprint 2:
+
+2. Search and Filtering
+   - Design and implement basic search functionality
+   - Develop filtering options for refining search results
+
+3. Hotel Listings
+   - Fetch and display a list of hotels based on search criteria
+   - Implement basic hotel details view
+
+  Sprint 3:
+
+4. Booking
+   - Allow users to select a hotel and book rooms for specific dates
+   - Display booking confirmation after successful booking
+
+5. Payment Integration
+   - Integrate payment gateway for secure transactions
+   - Test payment process with dummy data
+
+  Sprint 4:
+
+6. User Reviews and Ratings
+   - Allow users to rate hotels and leave reviews
+   - Display average rating for each hotel on the hotel details page
+
+7. Admin Dashboard
+   - Implement basic admin login/logout functionality
+   - Develop UI for managing hotels (add, edit, delete)
+
+  Sprint 5:
+
+8. Notifications
+   - Implement email notifications for booking confirmations and reminders
+   - Develop notifications for admins on new bookings and reviews
+
+9. Localization
+   - Add support for at least one additional language
+   - Implement currency conversion based on user's location or preference
+
+  Sprint 6:
+
+10. Responsive Design
+    - Ensure the app is responsive and works well on mobile devices
+    - Test responsiveness on various screen sizes and devices
+
+4) Set a Kanban board for your project?
+Ans:-
+
+- Kanban board for the Online Hotel Booking App project.
+
+- Kanban Board for Online Hotel Booking App:
+
+ Columns:
+
+1. Backlog:
+   - Contains user stories and tasks that haven't been started yet.
+
+2. To Do:
+   - Tasks that are ready to be worked on in the current sprint.
+
+3. In Progress:
+   - Tasks that are currently being worked on.
+
+4. Review/QA:
+   - Tasks that are completed and awaiting review or testing.
+
+5. Done:
+   - Tasks that have been completed and approved.
+
+- Cards (Tasks/User Stories):
+
+1. Backlog:
+   - User stories and tasks from the product backlog that haven't been assigned to a sprint yet.
+
+2. To Do, In Progress, Review/QA, Done:
+   - Cards representing individual tasks or user stories, each with a title, description, assignee, and due date.
+
+  Sample Kanban Board:
+
+```
+--------------------------------------------------------------------
+| Backlog | To Do          | In Progress    | Review/QA   | Done    |
+--------------------------------------------------------------------
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+|         |                |                |             |         |
+--------------------------------------------------------------------
+```
+
+  Usage:
+
+- Backlog:
+   - Move tasks from here to "To Do" when they're ready to be worked on.
+
+- To Do:
+   - Assign tasks to team members and move them to "In Progress" when they start working on them.
+
+- In Progress:
+   - Team members move tasks here when they start working on them.
+
+- Review/QA:
+   - After completing tasks, move them here for review and testing.
+
+- Done:
+   - Tasks that have been reviewed and approved are moved here.
+
+This Kanban board provides a visual representation of the project's progress and helps the team manage their tasks efficiently.
