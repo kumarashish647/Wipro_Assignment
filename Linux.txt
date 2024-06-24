@@ -1,0 +1,33 @@
+1)Write 30 linux commands?
+Ans:-
+
+1. `ls` - List directory contents.
+2. `cd` - Change the current directory.
+3. `pwd` - Print the current working directory.
+4. `mkdir` - Create a new directory.
+5. `rmdir` - Remove an empty directory.
+6. `touch` - Create an empty file or update the timestamp of an existing file.
+7. `cp` - Copy files and directories.
+8. `mv` - Move or rename files and directories.
+9. `rm` - Remove files or directories.
+10. `cat` - Concatenate and display the contents of files.
+11. `more` - View file contents one screen at a time.
+12. `less` - View file contents with backward navigation.
+13. `head` - Display the beginning of a file.
+14. `tail` - Display the end of a file.
+15. `grep` - Search for patterns within files.
+16. `find` - Search for files and directories.
+17. `chmod` - Change file permissions.
+18. `chown` - Change file owner and group.
+19. `df` - Display disk space usage.
+20. `du` - Display disk usage of files and directories.
+21. `ps` - Display currently running processes.
+22. `top` - Display and manage system processes.
+23. `kill` - Terminate processes by PID.
+24. `wget` - Download files from the internet.
+25. `curl` - Transfer data from or to a server.
+26. `ssh` - Securely connect to a remote machine.
+27. `scp` - Securely copy files between hosts.
+28. `tar` - Archive files.
+29. `zip` - Compress files into a ZIP archive.
+30. `unzip` - Extract files from a ZIP archive.
