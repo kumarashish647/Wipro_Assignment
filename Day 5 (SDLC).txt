@@ -3,59 +3,59 @@ Ans:-
 
   Script 1: Traditional In-Person Standup Meeting
 
- [Dhamothara Kannan]
+ Dhamothara Kannan:-
 
  Good morning, everyone! Let's begin our daily standup. We'll go around and each person will share three things: 
  what you worked on yesterday, what you plan to work on today, and any blockers or issues you're facing. 
  Let's try to keep it concise so we can wrap up in 15 minutes.
 
-  [Ashish]
+  Ashish:-
 1. Yesterday: I finished the initial draft of the user authentication module and started integration testing.
 2. Today: I plan to complete the integration testing and start working on the error handling for the module.
 3. Blockers: I'm having some trouble with the OAuth2 integration. I might need some help from the security team.
 
- [Aakash]
+ Aakash:-
 1. Yesterday: I fixed the bugs in the shopping cart feature and improved the performance of the checkout process.
 2. Today: I'll start working on the new feature for order tracking notifications.
 3. Blockers: No blockers at the moment.
 
- [Abhishek]
+ Abhishek:-
 1. Yesterday: I reviewed the code for the analytics dashboard and provided feedback.
 2. Today: I will start implementing the feedback and making the necessary adjustments.
 3. Blockers: None currently, but I might need some assistance with data visualization later on.
 
- [Dhamothara Kannan]
-Great, thank you all for the updates. For the OAuth2 integration issue, [Team Member 1], please coordinate with [Security Team Member] after the standup. If anyone else faces any issues, feel free to reach out. Let's have a productive day!
+ Dhamothara Kannan:-
+Great, thank you all for the updates. For the OAuth2 integration issue, Ashish, please coordinate with [Security Team Member] after the standup. If anyone else faces any issues, feel free to reach out. Let's have a productive day!
 
 ---
 
  Script 2: Virtual Standup Meeting
 
-  [Dhamothara Kannan]
+  Dhamothara Kannan:-
 
  Good morning, team! I hope everyone is doing well. Let's kick off our virtual standup. As usual, we'll go around and 
  share what you worked on yesterday, what you're working on today, and any blockers you might be facing. Please keep your updates
  brief. [Team Member 1], you can start.
 
- [Ashish]
+ Ashish:-
 
 1. Yesterday: I completed the initial setup of the CI/CD pipeline and started configuring the deployment scripts.
 2. Today: I plan to finish configuring the deployment scripts and begin testing the pipeline.
 3. Blockers: I encountered some issues with the YAML syntax in the deployment scripts. I'll need some time to debug this.
 
-  [Aakash]
+  Aakash:-
 
 1. Yesterday: I worked on the UI for the new dashboard and fixed a few layout bugs.
 2. Today: I'll continue refining the UI and start integrating the backend data.
 3. Blockers: No blockers for now.
 
-  [Abhishek]
+  Abhishek:-
 
 1. Yesterday: I finished writing the unit tests for the API endpoints.
 2. Today: I will start working on the API documentation.
 3. Blockers: None at the moment.
 
-  [Dhamothara Kannan]
+  Dhamothara Kannan:-
 
  Thank you for the updates. [Ashish], for the YAML syntax issues, consider pairing with [Abhishek] who has 
  experience with CI/CD pipelines. If anyone else encounters any roadblocks, please post in our project channel so we can address 
