@@ -1,0 +1,172 @@
+1) Count the number of files and folder present in the directory. If possible take the directory path from user?
+Ans:-
+   
+ - This script will take the directory path from the user, traverse the directory, and count the files and folders.
+
+  script:
+
+```Python Lnguage
+
+import os
+
+ def count_files_and_folders(directory):
+     file_count = 0
+     folder_count = 0
+
+    for root, dirs, files in os.walk(directory):
+        folder_count += len(dirs)
+        file_count += len(files)
+
+    return file_count, folder_count
+
+
+ directory = input("Please enter the directory path: ")
+
+ if os.path.exists(directory) and os.path.isdir(directory):
+    files, folders = count_files_and_folders(directory)
+    print(f"Number of files: {files}")
+    print(f"Number of folders: {folders}")
+
+ else:
+
+    print("The provided path is not a valid directory.")
+```
+
+```sh :-
+
+ python3 count_files_folders.py
+
+2) Ensure the script checks if a specific file (e.g., myfile.txt) exists in the current directory.If it exists, print
+   "File exists", otherwise print "File not found".
+Ans:-
+
+ To enhance the script to check if a specific file (e.g., `myfile.txt`) exists in the current directory and print the appropriate message, We can add a 
+   simple check for the file.
+
+```Python Language
+
+import os
+
+
+ def count_files_and_folders(directory):
+     file_count = 0
+     folder_count = 0
+
+    for root, dirs, files in os.walk(directory):
+        folder_count += len(dirs)
+        file_count += len(files)
+
+    return file_count, folder_count
+
+ directory = input("Please enter the directory path: ")
+
+
+ if os.path.exists(directory) and os.path.isdir(directory):
+    files, folders = count_files_and_folders(directory)
+    print(f"Number of files: {files}")
+    print(f"Number of folders: {folders}")
+    
+    
+    specific_file_path = os.path.join(directory, 'myfile.txt')
+    if os.path.isfile(specific_file_path):
+        print("File exists")
+
+    else:
+
+        print("File not found")
+ else:
+
+    print("The provided path is not a valid directory.")
+```
+
+
+```sh
+
+ python3 count_files_folders_and_check_file.py
+
+
+  When prompted, enter the directory path you want to check. The script will count the files and folders in the specified directory and will also check
+  if `myfile.txt` exists in that directory, printing the appropriate message.
+
+3) Write a script that reads numbers from the user until they enter '0'. The script should also print whether each number is odd or even?
+Ans:-
+
+  Python script that reads numbers from the user until they enter '0', and prints whether each number is odd or even. 
+
+
+ def is_even_or_odd(number):
+    if number % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+
+ print("Enter numbers one by one. Enter '0' to stop.")
+
+ while True:
+    
+    user_input = input("Enter a number: ")
+
+    try:
+
+        number = int(user_input)
+
+    except ValueError:
+
+        print("Invalid input. Please enter an integer.")
+        continue
+
+    if number == 0:
+
+        print("Stopping the script.")
+        break
+
+
+    result = is_even_or_odd(number)
+    print(f"The number {number} is {result}.")
+
+
+```sh
+
+python3 check_odd_even.py
+```
+
+4)Create a function that takes a filename as an argument and prints the number of lines in the file. Call this function from your script with different file names?
+Ans:-
+
+ Python Language:-
+
+ import os
+
+ def count_lines_in_file(filename):
+
+    try:
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+            line_count = len(lines)
+            print(f"The file '{filename}' has {line_count} lines.")
+    except FileNotFoundError:
+        print(f"The file '{filename}' was not found.")
+    except Exception as e:
+        print(f"An error occurred while reading the file '{filename}': {e}")
+
+
+ filenames = [
+    'file1.txt',
+    'file2.txt',
+    'file3.txt'  
+ ]
+
+
+ for filename in filenames:
+    count_lines_in_file(filename)
+
+
+```sh
+
+ python3 count_lines_in_files.py
+
+
+ The script will attempt to read each file listed in the `filenames` list and print the number of lines in each file. If a file is not found, it will print an appropriate message. 
+  we can add more filenames to the `filenames` list as needed.
+
+
