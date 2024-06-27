@@ -1,0 +1,272 @@
+1) Create a product table with necessary attribute. 
+        write a query for table creation, 
+        insert the product data into the table.
+        write a query to reterive all the product details 
+        write a query to reterive id and product name 
+        write a query to update and delete a product?
+
+Ans:-  SQL queries to create a product table, insert data, and perform various operations:
+
+ 1. Create Product Table
+
+```Sql
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(100) NOT NULL,
+    Category VARCHAR(50),
+    Price DECIMAL(10, 2) NOT NULL,
+    Quantity INT NOT NULL,
+    Supplier VARCHAR(100)
+);
+```
+
+ 2. Insert Product Data
+
+```sql
+
+INSERT INTO Products (ProductName, Category, Price, Quantity, Supplier)
+VALUES 
+('Laptop', 'Electronics', 999.99, 50, 'Tech Supplies Co.'),
+('Smartphone', 'Electronics', 699.99, 100, 'Mobile World'),
+('Desk Chair', 'Furniture', 149.99, 30, 'Furniture Central'),
+('Headphones', 'Electronics', 199.99, 75, 'Audio Emporium'),
+('Coffee Maker', 'Appliances', 49.99, 40, 'Home Essentials Inc.');
+```
+
+ 3. Retrieve All Product Details
+
+```sql
+
+SELECT * FROM Products;
+```
+
+ 4. Retrieve Product ID and Product Name
+
+```sql
+
+SELECT ProductID, ProductName FROM Products;
+```
+
+ 5. Update a Product
+
+```sql
+
+UPDATE Products
+SET Price = 899.99, Quantity = 45
+WHERE ProductID = 1;
+```
+
+ 6. Delete a Product
+
+```sql
+
+DELETE FROM Products
+WHERE ProductID = 5;
+```
+
+2) Write a Sql queries to Perform DDL operation for product entity.perform  create table, drop table, alter table, rename table queries for the product entity?
+Ans:-
+
+   SQL queries to perform various DDL (Data Definition Language) operations for a `Product` entity:-
+
+ 1. Create Table
+
+```sql
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(100) NOT NULL,
+    Category VARCHAR(50),
+    Price DECIMAL(10, 2) NOT NULL,
+    Quantity INT NOT NULL,
+    Supplier VARCHAR(100)
+);
+```
+
+ 2. Drop Table
+
+```sql
+
+DROP TABLE IF EXISTS Products;
+```
+
+ 3. Alter Table
+
+- Add a Column:-
+
+```Sql
+
+ALTER TABLE Products
+ADD COLUMN Description TEXT;
+```
+
+- Drop a Column:-
+
+```Sql
+
+ALTER TABLE Products
+DROP COLUMN Description;
+```
+
+- Modify a Column:-
+
+```Sql
+
+ALTER TABLE Products
+MODIFY COLUMN ProductName VARCHAR(150);
+```
+
+ 4. Rename Table
+
+```sql
+ALTER TABLE Products
+RENAME TO ProductInventory;
+```
+
+
+3) Write a query to find the product whose category is electronics 
+             find all the product whose price range is between 5000 and 10000
+             display name and price from product table.
+             display all the electronic category item which has price more than 2000
+             sort the product based on price in descending order.
+             sort the product based on name. 
+             count of product based on category. 
+             display all the product except electronics category.
+
+Ans:-
+
+  Here are the SQL queries for the specified tasks:
+
+ 1. Find the Product Whose Category is Electronics
+
+```Sql
+
+SELECT * FROM Products
+WHERE Category = 'Electronics';
+```
+
+### 2. Find All the Products Whose Price Range is Between 5000 and 10000
+
+```sql
+
+SELECT * FROM Products
+WHERE Price BETWEEN 5000 AND 10000;
+```
+
+ 3. Display Name and Price from Product Table
+
+```Sql
+
+SELECT ProductName, Price FROM Products;
+```
+
+ 4. Display All the Electronic Category Items Which Have Price More Than 2000
+
+```Sql
+
+SELECT * FROM Products
+WHERE Category = 'Electronics' AND Price > 2000;
+```
+
+ 5. Sort the Products Based on Price in Descending Order
+
+```Sql
+
+SELECT * FROM Products
+ORDER BY Price DESC;
+```
+
+ 6. Sort the Products Based on Name
+
+```Sql
+
+SELECT * FROM Products
+ORDER BY ProductName ASC;
+```
+
+ 7. Count of Products Based on Category
+
+```Sql
+
+SELECT Category, COUNT(*) AS ProductCount
+FROM Products
+GROUP BY Category;
+```
+
+ 8. Display All the Products Except Electronics Category
+
+```Sql
+
+SELECT * FROM Products
+WHERE Category <> 'Electronics';
+```
+4) Design a database schema for a library system, 
+       including tables, fields, and constraints like NOT NULL, 
+       UNIQUE, and CHECK. Include primary and foreign keys to establish 
+       relationships between tables?
+
+Ans:-
+
+ Tables:
+
+1. Books:-
+
+   - `book_id` (Primary Key)
+   - `title` (VARCHAR, NOT NULL)
+   - `author` (VARCHAR, NOT NULL)
+   - `isbn` (VARCHAR, UNIQUE)
+   - `published_year` (INT)
+   - `genre` (VARCHAR)
+   - `available` (BOOLEAN, default True)
+
+2. Members:-
+
+   - `member_id` (Primary Key)
+   - `name` (VARCHAR, NOT NULL)
+   - `address` (VARCHAR)
+   - `phone_number` (VARCHAR, UNIQUE)
+   - `email` (VARCHAR, UNIQUE)
+   - `registration_date` (DATE)
+
+3. Loans:-
+   - `loan_id` (Primary Key)
+   - `book_id` (Foreign Key to Books)
+   - `member_id` (Foreign Key to Members)
+   - `loan_date` (DATE)
+   - `return_date` (DATE)
+   - `returned` (BOOLEAN, default False)
+
+ Constraints:-
+
+- Books Table:-
+
+  - `book_id`: Primary Key
+  - `title`, `author`: NOT NULL
+  - `isbn`: UNIQUE
+  - `published_year`, `genre`, `available`: Allow NULL
+  
+- Members Table:-
+
+  - `member_id`: Primary Key
+  - `name`: NOT NULL
+  - `phone_number`, `email`: UNIQUE
+  - `address`, `registration_date`: Allow NULL
+  
+- Loans Table:-
+
+  - `loan_id`: Primary Key
+  - `book_id`: Foreign Key referencing `book_id` in Books table
+  - `member_id`: Foreign Key referencing `member_id` in Members table
+  - `loan_date`: NOT NULL
+  - `return_date`, `returned`: Allow NULL
+
+ Relationships:-
+
+- Books <-> Loans: One-to-Many relationship (One book can have many loans)
+  - `book_id` in Loans table references `book_id` in Books table.
+
+- Members <-> Loans: One-to-Many relationship (One member can have many loans)
+  - `member_id` in Loans table references `member_id` in Members table.
+
+
